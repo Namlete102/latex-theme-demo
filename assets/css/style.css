@@ -134,7 +134,7 @@ header ul li a:hover{
 /* Văn bản */
 
 .BodyText{
-    font-size: 23px;
+    font-size: 25px;
     margin-top: 0px;
     text-align: justify;
     margin-bottom: 40px;
@@ -366,6 +366,51 @@ caption {
   overflow-x: auto;
   overflow-y: hidden;
   max-width: 100%;
+}
+
+/* Theorem and proof */
+
+/* Bổ đề (Lemma) */
+
+.theorem{
+    font-size: 25px;    
+    display: block;
+    font-style:italic;
+}
+
+.theorem:before {
+    content: "Bổ đề "attr(number)".";
+    font-weight: bold;
+    font-style:normal;
+}
+
+.theorem[text]:before {
+    content: "Bổ đề "attr(number)" (" attr(text) "). ";
+}
+
+/* Chứng minh (proof) */
+
+.proof{
+    font-size: 25px;    
+    display: block;
+    font-style:normal;
+}
+
+.proof:before {
+    content: "Chứng minh "attr(number)".";
+    font-style: italic;
+}
+
+.proof[text]:before {
+    content: "Chứng minh "attr(number)" (" attr(text) "). ";
+}
+
+.proof::after {
+  content: 'QED';
+  filter: var(--proof-symbol-filter);
+  position: absolute;
+  right: -12px;
+  bottom: -2px;
 }
 
 /* Thêm thuộc tính này cho phần tử/phương trình nhận tham chiếu */
