@@ -379,13 +379,13 @@ caption {
 }
 
 .theorem:before {
-    content: "Định lý "attr(number)".";
+    content: "Theorem "attr(number)".";
     font-weight: bold;
     font-style:normal;
 }
 
 .theorem[text]:before {
-    content: "Định lý "attr(number)" (" attr(text) "). ";
+    content: "Theorem "attr(number)" (" attr(text) "). ";
 }
 
 /* Chứng minh (proof) */
@@ -409,8 +409,6 @@ caption {
   content: 'QED';
   filter: var(--proof-symbol-filter);
   position: absolute;
-  right: -12px;
-  bottom: -2px;
 }
 
 /* Thêm thuộc tính này cho phần tử/phương trình nhận tham chiếu */
