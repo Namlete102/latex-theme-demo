@@ -33,7 +33,7 @@ header nav {
     justify-content: center;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 102%;
     height: 120px;
     background-color: #121212;
     transition: transform 0.3s ease-in-out; /* Animates the hiding action */
@@ -53,11 +53,13 @@ header ul {
 }
 
 header ul li a{
+    font-size: 30px;
     color: rgb(62, 177, 198); 
     text-decoration: none;
     opacity: 0.6;
     transition: 0.5s;
 }
+
 header ul li a:hover{
     opacity: 3;
     color:#eeeeee;
@@ -93,21 +95,21 @@ header ul li a:hover{
 
 .LatexAbstractText{
     margin-top:10px;
-    font-size: 21px;
+    font-size: 1.5rem;
     text-align: center;
     text-align: justify;
-    text-indent: 20px
+    text-indent: 90px
 }
 
 .Margins{
-    padding-left: 10%;
-    width: 80%;
+    padding-left: 15%;
+    width: 70%;
 }
 
 .AbstractMargins{
-    padding-left: 5%;
-    padding-right: 5%;
-    width: 90%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
     padding-bottom: 15px;
 }
 
@@ -132,7 +134,7 @@ header ul li a:hover{
 /* Văn bản */
 
 .BodyText{
-    font-size: 23px;
+    font-size: 25px;
     margin-top: 0px;
     text-align: justify;
     margin-bottom: 40px;
@@ -366,6 +368,50 @@ caption {
   max-width: 100%;
 }
 
+/* Theorem and proof */
+
+/* Định lý (theorem) */
+
+.theorem{
+    font-size: 25px;    
+    display: block;
+    font-style:italic;
+}
+
+.theorem:before {
+    content: "Theorem "attr(number)".";
+    font-weight: bold;
+    font-style:normal;
+}
+
+.theorem[text]:before {
+    content: "Theorem "attr(number)" (" attr(text) "). ";
+}
+
+/* Chứng minh (proof) */
+
+.proof{
+    font-size: 25px;    
+    display: block;
+    font-style:normal;
+}
+
+.proof:before {
+    content: "Proof "attr(number)".";
+    font-style: italic;
+}
+
+.proof[text]:before {
+    content: "Proof "attr(number)" (" attr(text) "). ";
+}
+
+/* tạm thời niêm phong */
+/* .proof::after {
+  content: '';
+  filter: var(--proof-symbol-filter);
+  position: absolute;
+} */
+
 /* Thêm thuộc tính này cho phần tử/phương trình nhận tham chiếu */
  
 [id^="eq-"], 
@@ -377,15 +423,8 @@ caption {
 /* Chia đoạn */
 
 hr{
-    border: 1px solid white;
+    border: 1px solid black;
     width: 100%;
-}
-
-/* Footnote */
-
-.Footnote{
-    padding-top: 15px;
-    margin-bottom: 20px;
 }
 
 
@@ -424,8 +463,9 @@ footer{
 }
 
 .footerBottom p{
-    font-size: 16px;
+    font-size: 20px;
     color:rgb(255, 253, 252);
+
 }
 
 .designer{
