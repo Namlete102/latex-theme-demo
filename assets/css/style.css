@@ -405,11 +405,12 @@ caption {
     content: "Proof "attr(number)" (" attr(text) "). ";
 }
 
-.proof::after {
-  content: 'QED';
+/* tạm thời niêm phong */
+/* .proof::after {
+  content: '';
   filter: var(--proof-symbol-filter);
   position: absolute;
-}
+} */
 
 /* Thêm thuộc tính này cho phần tử/phương trình nhận tham chiếu */
  
