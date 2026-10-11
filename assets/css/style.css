@@ -33,7 +33,7 @@ header nav {
     justify-content: center;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 102%;
     height: 120px;
     background-color: #121212;
     transition: transform 0.3s ease-in-out; /* Animates the hiding action */
@@ -102,8 +102,8 @@ header ul li a:hover{
 }
 
 .Margins{
-    padding-left: 13%;
-    width: 75%;
+    padding-left: 15%;
+    width: 70%;
 }
 
 .AbstractMargins{
