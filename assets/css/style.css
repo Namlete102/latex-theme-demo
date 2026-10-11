@@ -370,7 +370,7 @@ caption {
 
 /* Theorem and proof */
 
-/* Bổ đề (Lemma) */
+/* Định lý (theorem) */
 
 .theorem{
     font-size: 25px;    
@@ -379,13 +379,13 @@ caption {
 }
 
 .theorem:before {
-    content: "Bổ đề "attr(number)".";
+    content: "Định lý "attr(number)".";
     font-weight: bold;
     font-style:normal;
 }
 
 .theorem[text]:before {
-    content: "Bổ đề "attr(number)" (" attr(text) "). ";
+    content: "Định lý "attr(number)" (" attr(text) "). ";
 }
 
 /* Chứng minh (proof) */
@@ -397,12 +397,12 @@ caption {
 }
 
 .proof:before {
-    content: "Chứng minh "attr(number)".";
+    content: "Proof "attr(number)".";
     font-style: italic;
 }
 
 .proof[text]:before {
-    content: "Chứng minh "attr(number)" (" attr(text) "). ";
+    content: "Proof "attr(number)" (" attr(text) "). ";
 }
 
 .proof::after {
